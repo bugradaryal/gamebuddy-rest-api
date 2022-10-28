@@ -43,7 +43,7 @@
         <td>Put</td>
     </tr>
     <tr align="center">
-        <td>Deletes the user</td>
+        <td>Deletes the user by id</td>
         <td><b>http://localhost:61256/api/User/DeleteUser/{id}</b></td>
         <td>Delete</td>
     </tr>
