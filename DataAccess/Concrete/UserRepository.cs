@@ -14,7 +14,6 @@ namespace DataAccess.Concrete
                 return DbContext.Users.ToList();
             }
         }
-
         public User GetUser(string email,string password)
         {
             using (var DbContext = new DataDbContext())

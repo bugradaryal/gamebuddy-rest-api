@@ -5,6 +5,10 @@ namespace Entities
 {
     public class User   
     {
+        public User()
+        {
+            this.My_Game = new HashSet<My_Game>();
+        }
         public int id { get; set; }
         public string about { get; set; }
         public string password { get; set; }
