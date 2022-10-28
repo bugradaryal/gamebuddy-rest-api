@@ -51,11 +51,11 @@
         <td>Gets all user's selected games by user id</td>
         <td><b>http://localhost:61256/api/My_Game/GetUsersAllGame/{id}</b></td>
         <td>Get</td>
-        <td rowspan=3 >The user's selected games data<br> (called My_Games)</td>
+        <td rowspan=3 >The user's selected games data<br> (called My_Game)</td>
     </tr>
     <tr align="center">
         <td>Removes the user's selected game</td>
-        <td><b>http://localhost:61256/api/User/GetUserById/{id}</b></td>
+        <td><b>http://localhost:61256/api/My_Game/DeleteUsersGames/{id}</b></td>
         <td>Delete</td>
     </tr>
     <tr align="center">
