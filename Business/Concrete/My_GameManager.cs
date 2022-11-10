@@ -26,5 +26,9 @@ namespace Business.Concrete
         {
             _my_GameRepository.AddUsersGame(my_Game);
         }
+        public List<AllGame> MostAddedTop5Games()
+        {
+            return _my_GameRepository.MostAddedTop5Games();
+        }
     }
 }

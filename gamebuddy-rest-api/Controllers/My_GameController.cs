@@ -36,5 +36,12 @@ namespace gamebuddy_rest_api.Controllers
             _myGameService.AddUsersGame(my_Game);
             return new JsonResult("Created");
         }
+
+        [Route("MostAddedTop5Games")]
+        [HttpGet]
+        public JsonResult MostAddedTop5Games()
+        {
+            return new JsonResult(_myGameService.MostAddedTop5Games());
+        }
     }
 }

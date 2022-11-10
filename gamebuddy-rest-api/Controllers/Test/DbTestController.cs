@@ -20,7 +20,7 @@ namespace gamebuddy_rest_api.Controllers.Test
 
         public DbTestController()
         {
-            _myGameService = new My_GameManager();
+            _myGameService = new GameAccountManager();
             _userService = new UserManager();
             _allGameService = new AllGameManager();
         }

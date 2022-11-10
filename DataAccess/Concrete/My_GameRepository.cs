@@ -30,5 +30,13 @@ namespace DataAccess.Concrete
                 DbContext.SaveChanges();
             }
         }
+        public List<AllGame> MostAddedTop5Games()
+        {
+            using (var DbContext = new DataDbContext())
+            {
+                return DbContext.AllGames.GroupBy(x => new { x.My_Game.game_id, x.id, x.game_name }).OrderByDescending(y => y.Select(x => x.My_Game.game_id).Count()).Take(5).Select(x=> new AllGame { id = x.Key.id, game_name = x.Key.game_name}).ToList();
+            }
+        }
+
     }
 }
